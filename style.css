@@ -1,0 +1,134 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.focus {
+    color: black;
+    font-size: large;
+    background-image: linear-gradient(to right, red, yellow);
+}
+
+hr.blur {
+    border: 0;
+    height: 0;
+    /* Firefox... */
+    box-shadow: 0 0 10px 1px black;
+}
+
+hr.dash {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+    margin: 20px 0;
+}
+
+.no-decoration,
+.no-decoration:visited {
+    text-decoration: none;
+}
+
+img.car {
+    width: 250px;
+}
+
+img.pet {
+    width: 250px;
+}
+
+img.race {
+    width: 250px;
+}
+
+#ray-work {
+    margin-top: 30px;
+}
+
+a.game-link {
+    text-decoration: none;
+    color: teal;
+}
+
+a.game-link:hover {
+    font-weight: bold;
+    font-size: 20px;
+    color: deeppink;
+    text-decoration: underline;
+}
+
+.translate {
+    color: darkgray;
+    font-size: small;
+}
+
+.text-center {
+    text-align: center;
+}
+
+img {
+    border-radius: 20px;
+    box-shadow: 4px 5px 4px 1px grey;
+}
+
+.garage, .pets  {
+    width: 50%;
+}
+
+.garage > ul, .pets > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.car {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.car img, .pet img  {
+    width: 200px;
+}
+
+.car-group {
+    display: flex;
+}
+
+.race {
+    text-align: left;
+    padding: 10px 0;
+}
+
+.race img  {
+    width: 200px;
+}
+
+.racetrack > h4, .racetrack > ol {
+    padding-left: 50px;
+}
+
+#ray-work {
+    padding: 0 20px;
+}
+
+#ray-work > .car-group {
+    text-align: center;
+}
+
+#ray-work > h3 {
+    color: #ff6150;
+    font-size: 24px;
+}
+
+#ray-work strong {
+    color: #508dff;
+}
+
+.tomato-text {
+    color: tomato;
+    text-shadow: 2px 2px 4px;
+}
+
+.level-text {
+    color: violet;
+    text-shadow: 2px 2px 4px;
+}

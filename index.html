@@ -4,22 +4,49 @@
 <head>
     <title>Team 2 Webpage</title>
 
+    <!--Ray: <table>, <header> and <a> Stylization.-->
     <style>
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
+        * {
+            margin: 0;
+            padding: 0;
         }
 
-        .center {
+        header {
             text-align: center;
-            margin-left: auto;
-            margin-right: auto;
+            width: 100%;
+            background-color: #1fc8db;
+            background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+            color: white;
+            opacity: 0.95;
+        }
+
+        /* Style the table */
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        /* Style table headers and table data */
+        th,
+        td {
+            text-align: center;
+            padding: 16px;
+        }
+
+        th:first-child,
+        td:first-child {
+            text-align: left;
         }
     </style>
+
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header class="center">
-        <h1>Things To Do During Quarantine</h1>
+    <header>
+        <h1 style="color: #1237bf;">Things To Do During Quarantine</h1>
         <!--The page must include these HTML tags:
                 headings (<h1>, <h2>, etc.),
                 paragraph <p>,
@@ -34,7 +61,7 @@
         <!-- This table was edited and implemented by all of us.
         This table gives the reader information on who we are (Name age grade)-->
         <h2>About Us</h2>
-        <table style="border:3px #cccccc solid;" class="center" cellpadding="10" border='2'>
+        <table class="center" cellpadding="10" border="0">
             <tr>
                 <th> First </th>
                 <th> Last </th>
@@ -59,15 +86,181 @@
                 <td>19</td>
                 <td>Sophomore</td>
             </tr>
-            <td>Ray</td>
-            <td>Yu</td>
-            <td>19</td>
-            <td>Freshmen</td>
+
+            <tr class="focus">
+                <!-- Ray: Add <a> here to link my work -->
+                <td><a class="no-decoration" href="#ray-work">Ray</a>
+                </td>
+                <td>Yu</td>
+                <td>19</td>
+                <td>Freshmen</td>
+            </tr>
         </table>
     </header>
 
-    <hr />
+    <hr class="blur" />
 
+    <!-- Ray's Work starts here. -->
+    <div id="ray-work">
+
+        <h2 style="text-align: center;font-size: xx-large;font-weight: 200;margin-bottom: 10px;">Ray Yu's Activity</h2>
+        <p>
+            During the quarantine, like most people, I played video games and watch dramas in the dorm, and
+            occasionally practiced some of the programs I learned in the classroom.
+        </p>
+        <p>
+            The video game part is to play a series of games by Garena, like
+            <a class=" game-link " href=" https://play.na.leagueoflegends.com/en_US " target="_ blank">"League of
+                Legends"</a>,
+            playing qualifying points or racing games, like
+            <a class="game-link" href="https://speed.garena.com/" target="_ blank">"Speed Drifters"</a>
+            <em class="translate">(Chinese: 極速領域). </em>
+        </p>
+        <p>
+            The dramas part is to watch <span>"Running Man"</span>
+            <em class="translate">(Chinese: 奔跑吧！兄弟) </em>
+            and <span>"Mr. Player"</span>
+            <em class="translate">(Chinese: 綜藝玩很大)</em>。
+        </p>
+
+        <hr class="dash" />
+
+        <h3 class="text-center">Speed Drifters</h3>
+
+        <div class="car-group">
+
+            <div class="garage">
+
+                <h4 class="game-title text-center"><strong>My Garage</strong></h4>
+
+                <ul>
+                    <li>
+                        <div class="car">
+                            <img src="./images/Happon.jpg" alt="Happon" />
+                            <p>Happon (C-Car)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="car">
+                            <img src="./images/Razor.jpg" alt="Razor" />
+                            <p>Razor (B-Car)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="car">
+                            <img src="./images/Dove.jpg" alt="Dove" />
+                            <p>Dove (B-Car)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="car">
+                            <img src="./images/K24.jpg" alt="K24" />
+                            <p>K24 (B-Car)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="car">
+                            <img src="./images/Blade.jpg" alt="Blade" />
+                            <p>Blade (B-Car)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="car">
+                            <img src="./images/Southern Light.jpg" alt="Southern Light" />
+                            <p>Southern Light (B-Car)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="car">
+                            <img src="./images/City Beast.jpg" alt="City Beast" />
+                            <p>City Beast (M1 Bike)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="car">
+                            <img src="./images/Red Devil.jpg" alt="Red Devil" />
+                            <p>Red Devil (M2 Bike)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="car">
+                            <img src="./images/War Song.jpg" alt="War Song" />
+                            <p>War Song (A-Car)</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pets">
+
+                <h4 class="game-title text-center"><strong>My Pets</strong></h4>
+
+                <ul>
+                    <li>
+                        <div class="pet">
+                            <img src="./images/Whitemane.jpg" alt="Whitemane" />
+                            <p>Whitemane <span class="level-text">(Lv 1)</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pet">
+                            <img src="./images/Mr. Golden Hair.jpg" alt="Mr. Golden Hair" />
+                            <p>Mr. Golden Hair <span class="level-text">(Lv 12)</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pet">
+                            <img src="./images/Divine Tiger.jpg" alt="Divine Tiger" />
+                            <p>Divine Tiger <span class="level-text">(Lv 17)</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pet">
+                            <img src="./images/Penguin Boy.jpg" alt="Penguin Boy" />
+                            <p>Penguin Boy <span class="level-text">(Lv 20)</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pet">
+                            <img src="./images/Silver Horn.jpg" alt="Silver Horn" />
+                            <p>Silver Horn <span class="level-text">(Lv 30)</span></p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="racetrack">
+
+            <h4 class="game-title"><strong>Rankings of Racetrack</strong></h4>
+
+            <ol>
+                <li>
+                    <div class="race">
+                        <img src="./images/Grand Canyon.jpg" alt="Grand Canyon" />
+                        <p>Grand Canyon <span class="tomato-text">(01:44:62)</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="race">
+                        <img src="./images/Wild West.jpg" alt="Wild West" />
+                        <p>Wild West <span class="tomato-text">(01:27:22)</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="race">
+                        <img src="./images/Sleepy Forest.jpg" alt="Sleepy Forest" />
+                        <p>Sleepy Forest <span class="tomato-text">(01:44:75)</span></p>
+                    </div>
+                </li>
+            </ol>
+
+        </div>
+
+
+    </div>
 </body>
 
 </html>
