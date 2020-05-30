@@ -23,6 +23,10 @@ hr.dash {
     margin: 20px 0;
 }
 
+ul, ol {
+    list-style: none;
+}
+
 .no-decoration,
 .no-decoration:visited {
     text-decoration: none;
@@ -32,8 +36,34 @@ img.car {
     width: 250px;
 }
 
-img.pet {
-    width: 250px;
+.pet img  {
+    width: 200px;
+    animation-name: unhover;
+    animation-duration: 0.5s;
+}
+
+@keyframes unhover {
+    from {
+        width: 260px;
+    }
+    to {
+        width: 200px;
+    }
+}
+
+.pet img:hover {
+    width: 260px;
+    animation-name: hover;
+    animation-duration: 0.5s;
+}
+
+@keyframes hover {
+    from {
+        width: 200px;
+    }
+    to {
+        width: 260px;
+    }
 }
 
 img.race {
@@ -70,31 +100,13 @@ img {
     box-shadow: 4px 5px 4px 1px grey;
 }
 
-.garage, .pets  {
-    width: 50%;
-}
-
-.garage > ul, .pets > ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.car {
+.car, .pet {
     text-align: center;
     padding: 10px 0;
 }
 
-.car img, .pet img  {
-    width: 200px;
-}
-
-.car-group {
-    display: flex;
-}
-
 .race {
-    text-align: left;
+    text-align: center;
     padding: 10px 0;
 }
 
@@ -104,6 +116,11 @@ img {
 
 .racetrack > h4, .racetrack > ol {
     padding-left: 50px;
+}
+
+.racetrack img {
+    width: 400px;
+    height: 200px;
 }
 
 #ray-work {
@@ -131,4 +148,8 @@ img {
 .level-text {
     color: violet;
     text-shadow: 2px 2px 4px;
+}
+
+.game-title {
+    margin: 30px 0 50px;
 }
